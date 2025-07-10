@@ -1,5 +1,5 @@
 
-import { Target, Zap, TrendingUp, ShoppingCart, FileText, Users, MessageCircle } from 'lucide-react';
+import { Target, Zap, TrendingUp, ShoppingCart, FileText, Users, MessageCircle, Brain } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
 const ServicesSection = () => {
@@ -105,6 +105,21 @@ const ServicesSection = () => {
       detailedInfo: "Desenvolvemos estratégias avançadas de remarketing para recuperar vendas perdidas e reconverter leads que não finalizaram a compra. Utilizamos e-mail marketing, retargeting e segmentação comportamental para maximizar suas oportunidades de venda.",
       color: "from-orange-400 to-yellow-600",
       additionalFeatures: []
+    },
+    {
+      icon: <Brain className="h-12 w-12 text-purple-500" />,
+      title: "Inteligência Artificial para Pet Care",
+      description: "Automação inteligente e chatbots personalizados para otimizar o atendimento e vendas.",
+      shortDescription: "Automação inteligente e chatbots personalizados para otimizar o atendimento e vendas no setor pet.",
+      features: [
+        "Chatbots inteligentes para atendimento 24/7",
+        "Automação de agendamentos",
+        "Análise preditiva de comportamento",
+        "Personalização de ofertas com IA"
+      ],
+      detailedInfo: "Implementamos soluções de inteligência artificial específicas para o mercado pet care, incluindo chatbots que entendem as necessidades dos tutores, automação de processos e análise preditiva para otimizar suas estratégias de vendas e atendimento.",
+      color: "from-purple-400 to-blue-500",
+      additionalFeatures: ["Machine Learning aplicado", "Integração com WhatsApp Business", "Dashboard de analytics avançado"]
     }
   ];
 

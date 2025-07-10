@@ -26,6 +26,16 @@ const Hero = () => {
             <strong>Aumente o faturamento do seu negócio pet ainda esse mês.</strong>
           </p>
           
+          <div className="text-base sm:text-lg mb-6 max-w-3xl mx-auto px-4">
+            <div className="overflow-hidden">
+              <div className="animate-[slideUp_3s_ease-in-out_infinite] text-white/90">
+                <div className="py-1">✨ Mais de 500 clínicas veterinárias atendidas</div>
+                <div className="py-1">🚀 Resultados comprovados em 30 dias</div>
+                <div className="py-1">💡 Estratégias exclusivas para o mercado pet</div>
+              </div>
+            </div>
+          </div>
+          
           <div className="flex justify-center items-center mb-8 sm:mb-12 px-4">
             <Button 
               onClick={handleWhatsAppClick}
