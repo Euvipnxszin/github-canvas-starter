@@ -29,7 +29,7 @@ const Footer = () => {
                 href="https://www.instagram.com/meltro_agency7857/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="bg-purple-600 hover:bg-purple-700 p-2.5 sm:p-3 rounded-full transition-colors"
+                className="bg-purple-600 hover:bg-purple-700 p-2.5 sm:p-3 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/50"
               >
                 <Instagram className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
@@ -42,19 +42,19 @@ const Footer = () => {
             <nav className="space-y-3">
               <Link 
                 to="/sobre" 
-                className="block text-gray-300 hover:text-purple-400 transition-colors text-sm sm:text-base"
+                className="block text-gray-300 hover:text-purple-400 transition-all duration-300 text-sm sm:text-base hover:translate-x-2"
               >
                 Sobre Nós
               </Link>
               <Link 
                 to="/servicos" 
-                className="block text-gray-300 hover:text-purple-400 transition-colors text-sm sm:text-base"
+                className="block text-gray-300 hover:text-purple-400 transition-all duration-300 text-sm sm:text-base hover:translate-x-2"
               >
                 Serviços
               </Link>
               <Link 
                 to="/casos" 
-                className="block text-gray-300 hover:text-purple-400 transition-colors text-sm sm:text-base"
+                className="block text-gray-300 hover:text-purple-400 transition-all duration-300 text-sm sm:text-base hover:translate-x-2"
               >
                 Estudos de Caso
               </Link>
@@ -67,16 +67,16 @@ const Footer = () => {
             <div className="space-y-3">
               <a 
                 href="mailto:meltroagency@gmail.com" 
-                className="flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-colors text-sm sm:text-base"
+                className="flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-all duration-300 text-sm sm:text-base hover:translate-x-2 group"
               >
-                <Mail className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                <Mail className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 group-hover:animate-bounce-subtle" />
                 <span>meltroagency@gmail.com</span>
               </a>
               <a 
                 href="tel:+12365000042" 
-                className="flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-colors text-sm sm:text-base"
+                className="flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-all duration-300 text-sm sm:text-base hover:translate-x-2 group"
               >
-                <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 group-hover:animate-bounce-subtle" />
                 <span>(236) 500-0042</span>
               </a>
             </div>

@@ -27,12 +27,12 @@ const ServiceCard = ({
   const allFeatures = [...features, ...additionalFeatures];
   
   return (
-    <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
-      <div className={`w-20 h-20 rounded-2xl bg-gradient-to-r ${color} flex items-center justify-center mb-6`}>
+    <div className="bg-white rounded-2xl p-8 shadow-lg hover-lift border border-gray-100 group hover:border-purple-200 transition-all duration-500">
+      <div className={`w-20 h-20 rounded-2xl bg-gradient-to-r ${color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
         {icon}
       </div>
       
-      <h3 className="text-3xl font-playfair font-bold text-gray-900 mb-4">
+      <h3 className="text-3xl font-playfair font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors duration-300">
         {title}
       </h3>
       
@@ -52,7 +52,7 @@ const ServiceCard = ({
 
       <Dialog>
         <DialogTrigger asChild>
-          <Button className={`w-full ${buttonColor} text-white font-semibold py-3 px-6 rounded-xl`}>
+          <Button className={`w-full ${buttonColor} text-white font-semibold py-3 px-6 rounded-xl btn-hover`}>
             Mais Informações
           </Button>
         </DialogTrigger>

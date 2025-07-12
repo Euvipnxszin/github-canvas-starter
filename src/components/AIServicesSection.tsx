@@ -48,17 +48,16 @@ const AIServicesSection = () => {
     },
     {
       icon: <BookOpen className="h-12 w-12 text-indigo-500" />,
-      title: "Consultoria",
-      description: "Consultoria especializada para implementação e otimização de todas as soluções.",
-      shortDescription: "Consultoria especializada para implementação e otimização de todas as soluções de IA e automação.",
+      title: "Agentes de IA altamente personalizados",
+      description: "Agentes de inteligência artificial personalizados para automatizar processos específicos do seu negócio pet care.",
+      shortDescription: "Agentes de inteligência artificial personalizados para automatizar processos específicos do seu negócio pet care.",
       features: [
-        "Growth hacking com auxílio de IA para maximizar as chances de sucesso",
-        "Obtenha escalabilidade real",
-        "Implementação guiada",
-        "Acompanhamento dos resultados",
-        "Suporte contínuo"
+        "IA personalizada para seu nicho específico",
+        "Automação de processos complexos",
+        "Aprendizado contínuo do seu negócio",
+        "Integração com todos os seus sistemas"
       ],
-      detailedInfo: "Obtenha um Parceiro Estratégico e sinta na pele o por que é muito Melhor que uma Solução 100% Automatizada\n\nNossa consultoria especializada oferece análise estratégica completa do seu negócio, implementação guiada de todas as soluções, treinamento completo da sua equipe e suporte contínuo para garantir o máximo resultado dos investimentos.",
+      detailedInfo: "Desenvolvemos agentes de IA completamente personalizados para as necessidades específicas do seu negócio pet care. Estes agentes aprendem continuamente sobre seus processos, clientes e mercado, automatizando tarefas complexas e fornecendo insights valiosos para otimizar suas operações e aumentar sua lucratividade.",
       color: "from-indigo-400 to-purple-500"
     }
   ];
@@ -89,21 +88,21 @@ const AIServicesSection = () => {
             />
           ))}
           
-          {/* Novo serviço de Agentes de IA */}
+          {/* Novo serviço de Consultoria */}
           <ServiceCard
             icon={<Bot className="h-12 w-12 text-indigo-500" />}
-            title="Agentes de IA altamente personalizados"
-            shortDescription="Agentes de inteligência artificial personalizados para automatizar processos específicos do seu negócio pet care."
+            title="Consultoria"
+            shortDescription="Consultoria especializada para implementação e otimização de todas as soluções de IA e automação."
             features={[
-              "IA personalizada para seu nicho específico",
-              "Automação de processos complexos",
-              "Aprendizado contínuo do seu negócio",
-              "Integração com todos os seus sistemas"
+              "Growth hacking com auxílio de IA para maximizar as chances de sucesso",
+              "Obtenha escalabilidade real",
+              "Implementação guiada",
+              "Acompanhamento dos resultados"
             ]}
-            detailedInfo="Desenvolvemos agentes de IA completamente personalizados para as necessidades específicas do seu negócio pet care. Estes agentes aprendem continuamente sobre seus processos, clientes e mercado, automatizando tarefas complexas e fornecendo insights valiosos para otimizar suas operações e aumentar sua lucratividade."
+            detailedInfo="Obtenha um Parceiro Estratégico e sinta na pele o por que é muito Melhor que uma Solução 100% Automatizada\n\nNossa consultoria especializada oferece análise estratégica completa do seu negócio, implementação guiada de todas as soluções, treinamento completo da sua equipe e suporte contínuo para garantir o máximo resultado dos investimentos."
             color="from-indigo-400 to-purple-500"
             buttonColor="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600"
-            additionalFeatures={["Machine Learning avançado", "Processamento de linguagem natural", "Análise preditiva personalizada"]}
+            additionalFeatures={["Suporte contínuo", "Machine Learning avançado", "Processamento de linguagem natural", "Análise preditiva personalizada"]}
           />
         </div>
       </div>

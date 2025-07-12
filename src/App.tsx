@@ -9,6 +9,8 @@ import Servicos from "./pages/Servicos";
 import Sobre from "./pages/Sobre";
 import EstudosCaso from "./pages/EstudosCaso";
 import NotFound from "./pages/NotFound";
+import SkeletonLoader from "./components/SkeletonLoader";
+import PageTransition from "./components/PageTransition";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -26,13 +28,17 @@ function App() {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/servicos" element={<Servicos />} />
-            <Route path="/sobre" element={<Sobre />} />
-            <Route path="/casos" element={<EstudosCaso />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <SkeletonLoader loadingTime={3000}>
+            <PageTransition>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/servicos" element={<Servicos />} />
+                <Route path="/sobre" element={<Sobre />} />
+                <Route path="/casos" element={<EstudosCaso />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </PageTransition>
+          </SkeletonLoader>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

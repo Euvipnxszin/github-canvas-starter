@@ -55,7 +55,7 @@ const Header = () => {
             ))}
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full"
+              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full btn-hover"
             >
               Falar Conosco
             </Button>
@@ -88,7 +88,7 @@ const Header = () => {
               ))}
               <Button 
                 onClick={handleWhatsAppClick}
-                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full w-fit"
+                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-2 rounded-full w-fit btn-hover"
               >
                 Falar Conosco
               </Button>
