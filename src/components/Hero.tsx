@@ -35,7 +35,6 @@ const Hero = () => {
           
           <div className="text-lg sm:text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed font-light px-4 min-h-[60px] flex items-center justify-center">
             <strong>
-              Aumente o faturamento do seu{' '}
               <TypewriterText texts={typewriterTexts} />
             </strong>
           </div>

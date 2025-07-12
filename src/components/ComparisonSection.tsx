@@ -5,32 +5,26 @@ const ComparisonSection = () => {
     {
       item: "Experiência no mercado pet",
       freelancer: "Limitada",
-      agency: "Variável",
-      meltro: "Especializada em pet care"
+      agency: "Média",
+      meltro: "Alta. Nós vivemos e respiramos os desafios do mercado pet. Falamos a sua língua desde o primeiro dia"
     },
     {
       item: "Estratégias personalizadas",
       freelancer: "Templates genéricos",
-      agency: "Algumas customizações",
-      meltro: "100% personalizadas para pet"
+      agency: "Métodos datados",
+      meltro: "GERAMOS NOVA DEMANDA de forma automática"
     },
     {
       item: "Automação com IA",
-      freelancer: "Não disponível",
-      agency: "Básica",
-      meltro: "Avançada e específica"
+      freelancer: "Básico",
+      agency: "Usa ferramentas, mas o núcleo do trabalho é o serviço manual de analistas.",
+      meltro: "NATIVO. Nosso sistema é construído sobre uma base de Inteligência Artificial para prospecção, SEO e otimização"
     },
     {
-      item: "Suporte contínuo",
-      freelancer: "Limitado",
-      agency: "Horário comercial",
-      meltro: "24/7 especializado"
-    },
-    {
-      item: "ROI comprovado",
-      freelancer: "Sem garantias",
-      agency: "Resultados variáveis",
-      meltro: "300% de aumento médio"
+      item: "Potencial de ROI e Escalabilidade",
+      freelancer: "Baixo e imprevisível, dependente do seu tempo limitado",
+      agency: "Difícil de medir, muitas vezes focado em métricas de vaidade (curtidas).",
+      meltro: "Exponencial. Focado 100% em métricas de negócio (faturamento, clientes) e sistemas que escalam junto com você."
     },
     {
       item: "Integração completa",
@@ -48,7 +42,7 @@ const ComparisonSection = () => {
             Compare suas <span className="text-orange-500">opções</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Veja por que a Meltro Agency é a escolha certa para seu negócio pet care
+            A escolha de um parceiro de marketing define o futuro do seu faturamento. Veja uma comparação honesta das suas opções
           </p>
         </div>
 
@@ -82,13 +76,6 @@ const ComparisonSection = () => {
             </div>
           </div>
 
-          <div className="text-center mt-8">
-            <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-2xl p-8 shadow-2xl">
-              <p className="text-xl sm:text-2xl font-bold font-playfair">
-                "A diferença está na especialização e nos resultados comprovados no mercado pet care."
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
