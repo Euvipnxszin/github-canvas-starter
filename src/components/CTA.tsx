@@ -37,8 +37,8 @@ const CTA = () => {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <ArrowRight className="h-8 w-8 text-purple-400 mx-auto mb-3" />
-              <div className="font-bold mb-2">Sem Contratos</div>
-              <div className="text-sm opacity-90">Cancele quando quiser</div>
+              <div className="font-bold mb-2">Resultados Garantidos</div>
+              <div className="text-sm opacity-90">Performance comprovada</div>
             </div>
           </div>
 

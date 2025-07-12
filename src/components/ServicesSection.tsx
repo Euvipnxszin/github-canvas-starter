@@ -108,18 +108,18 @@ const ServicesSection = () => {
     },
     {
       icon: <Brain className="h-12 w-12 text-purple-500" />,
-      title: "Inteligência Artificial para Pet Care",
-      description: "Automação inteligente e chatbots personalizados para otimizar o atendimento e vendas.",
-      shortDescription: "Automação inteligente e chatbots personalizados para otimizar o atendimento e vendas no setor pet.",
+      title: "SEO inteligente",
+      description: "Otimização inteligente para mecanismos de busca específica para o mercado pet care.",
+      shortDescription: "Otimização inteligente para mecanismos de busca específica para o mercado pet care.",
       features: [
-        "Chatbots inteligentes para atendimento 24/7",
-        "Automação de agendamentos",
-        "Análise preditiva de comportamento",
-        "Personalização de ofertas com IA"
+        "Otimização de palavras-chave específicas para pet care",
+        "Criação de conteúdo otimizado",
+        "Análise de concorrência no mercado pet",
+        "Estratégias de link building especializadas"
       ],
-      detailedInfo: "Implementamos soluções de inteligência artificial específicas para o mercado pet care, incluindo chatbots que entendem as necessidades dos tutores, automação de processos e análise preditiva para otimizar suas estratégias de vendas e atendimento.",
+      detailedInfo: "Desenvolvemos estratégias de SEO específicas para o mercado pet care, utilizando inteligência artificial para identificar as melhores oportunidades de rankeamento, criando conteúdo otimizado e implementando técnicas avançadas para posicionar seu negócio no topo do Google.",
       color: "from-purple-400 to-blue-500",
-      additionalFeatures: ["Machine Learning aplicado", "Integração com WhatsApp Business", "Dashboard de analytics avançado"]
+      additionalFeatures: ["Análise de SERP em tempo real", "Monitoramento de posições", "Relatórios de performance detalhados"]
     }
   ];
 

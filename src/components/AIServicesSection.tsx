@@ -38,7 +38,7 @@ const AIServicesSection = () => {
       description: "Soluções completas de marketing de entrada prontas para usar e gerar resultados.",
       shortDescription: "Soluções completas de marketing de entrada prontas para usar e gerar resultados imediatos.",
       features: [
-        "Configuração automática",
+        "Integração Completa Para Unificar Operações",
         "Templates otimizados",
         "Automação de nutrição",
         "Dashboard de resultados"
@@ -53,6 +53,7 @@ const AIServicesSection = () => {
       shortDescription: "Consultoria especializada para implementação e otimização de todas as soluções de IA e automação.",
       features: [
         "Growth hacking com auxílio de IA para maximizar as chances de sucesso",
+        "Obtenha escalabilidade real",
         "Implementação guiada",
         "Acompanhamento dos resultados",
         "Suporte contínuo"
@@ -70,8 +71,7 @@ const AIServicesSection = () => {
             Substitua seu SDR caro por nossas soluções de IA
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Soluções Inteligentes com IA e Automação para donos de Clínicas veterinárias premium, 
-            delivery premium e donos de e-comerces pet
+            Soluções Inteligentes com IA e Automação para obter escalabilidade real, maior eficiência e reaproveitamento de cada Lead
           </p>
         </div>
 
@@ -88,6 +88,23 @@ const AIServicesSection = () => {
               buttonColor="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600"
             />
           ))}
+          
+          {/* Novo serviço de Agentes de IA */}
+          <ServiceCard
+            icon={<Bot className="h-12 w-12 text-indigo-500" />}
+            title="Agentes de IA altamente personalizados"
+            shortDescription="Agentes de inteligência artificial personalizados para automatizar processos específicos do seu negócio pet care."
+            features={[
+              "IA personalizada para seu nicho específico",
+              "Automação de processos complexos",
+              "Aprendizado contínuo do seu negócio",
+              "Integração com todos os seus sistemas"
+            ]}
+            detailedInfo="Desenvolvemos agentes de IA completamente personalizados para as necessidades específicas do seu negócio pet care. Estes agentes aprendem continuamente sobre seus processos, clientes e mercado, automatizando tarefas complexas e fornecendo insights valiosos para otimizar suas operações e aumentar sua lucratividade."
+            color="from-indigo-400 to-purple-500"
+            buttonColor="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600"
+            additionalFeatures={["Machine Learning avançado", "Processamento de linguagem natural", "Análise preditiva personalizada"]}
+          />
         </div>
       </div>
     </section>

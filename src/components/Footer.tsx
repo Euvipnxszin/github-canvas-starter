@@ -1,5 +1,5 @@
 
-import { Instagram, Facebook, Mail, Phone } from 'lucide-react';
+import { Instagram, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { getAssetPath } from '@/lib/assets';
 
@@ -32,14 +32,6 @@ const Footer = () => {
                 className="bg-purple-600 hover:bg-purple-700 p-2.5 sm:p-3 rounded-full transition-colors"
               >
                 <Instagram className="h-4 w-4 sm:h-5 sm:w-5" />
-              </a>
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="bg-blue-600 hover:bg-blue-700 p-2.5 sm:p-3 rounded-full transition-colors"
-              >
-                <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />
               </a>
             </div>
           </div>

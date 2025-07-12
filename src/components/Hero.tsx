@@ -1,10 +1,21 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import TypewriterText from './TypewriterText';
+import CounterAnimation from './CounterAnimation';
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
     window.open('https://wa.me/12365000042', '_blank');
   };
+
+  const typewriterTexts = [
+    "pet shop independente",
+    "pronto socorro 24h pet", 
+    "Negócios que cuidam de vidas",
+    "Hospital Veterinário 24h",
+    "Clínicas veterinárias",
+    "Hotel e creche pet"
+  ];
 
   return (
     <section className="relative min-h-screen bg-gradient-hero flex items-center justify-center overflow-hidden">
@@ -22,18 +33,11 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed font-light px-4">
-            <strong>Aumente o faturamento do seu negócio pet ainda esse mês.</strong>
-          </p>
-          
-          <div className="text-base sm:text-lg mb-6 max-w-3xl mx-auto px-4">
-            <div className="overflow-hidden">
-              <div className="animate-[slideUp_3s_ease-in-out_infinite] text-white/90">
-                <div className="py-1">✨ Mais de 500 clínicas veterinárias atendidas</div>
-                <div className="py-1">🚀 Resultados comprovados em 30 dias</div>
-                <div className="py-1">💡 Estratégias exclusivas para o mercado pet</div>
-              </div>
-            </div>
+          <div className="text-lg sm:text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed font-light px-4 min-h-[60px] flex items-center justify-center">
+            <strong>
+              Aumente o faturamento do seu{' '}
+              <TypewriterText texts={typewriterTexts} />
+            </strong>
           </div>
           
           <div className="flex justify-center items-center mb-8 sm:mb-12 px-4">
@@ -53,15 +57,21 @@ const Hero = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto px-4">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20">
-              <div className="text-2xl sm:text-3xl font-bold mb-2">300%</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">
+                <CounterAnimation end={300} suffix="%" />
+              </div>
               <div className="text-sm opacity-90">Aumento médio em consultas</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20">
-              <div className="text-2xl sm:text-3xl font-bold mb-2">24h</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">
+                <CounterAnimation end={48} suffix="h" />
+              </div>
               <div className="text-sm opacity-90">Para primeiros resultados</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-white/20">
-              <div className="text-2xl sm:text-3xl font-bold mb-2">R$ 50M+</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">
+                <CounterAnimation prefix="R$ " end={50} suffix="M+" />
+              </div>
               <div className="text-sm opacity-90">Faturamento gerado em 2024</div>
             </div>
           </div>
