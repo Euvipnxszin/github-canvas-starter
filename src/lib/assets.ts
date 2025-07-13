@@ -4,7 +4,13 @@
  * In production (GitHub Pages): includes the base path
  */
 export const getAssetPath = (path: string): string => {
-  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  // Convert lovable-uploads paths to images paths
+  let cleanPath = path.startsWith('/') ? path : `/${path}`;
+  
+  // Replace lovable-uploads with images for proper deployment
+  if (cleanPath.includes('/lovable-uploads/')) {
+    cleanPath = cleanPath.replace('/lovable-uploads/', '/images/');
+  }
   
   if (import.meta.env.DEV) {
     return cleanPath;

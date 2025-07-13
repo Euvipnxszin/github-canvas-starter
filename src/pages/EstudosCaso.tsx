@@ -2,6 +2,8 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import NotificationForm from '@/components/NotificationForm';
+import CounterAnimation from '@/components/CounterAnimation';
+import ScrollReveal from '@/components/ScrollReveal';
 import { Construction, Calendar, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 
@@ -96,23 +98,35 @@ const EstudosCaso = () => {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <div className="text-4xl font-bold text-green-600 mb-2">+380%</div>
-                <div className="text-gray-600 mb-4">Aumento no faturamento</div>
-                <div className="text-sm text-gray-500">Clínica Veterinária - SP</div>
-              </div>
+              <ScrollReveal delay={200}>
+                <div className="bg-white rounded-2xl p-8 shadow-lg text-center hover-lift">
+                  <div className="text-4xl font-bold text-green-600 mb-2">
+                    <CounterAnimation prefix="+" end={380} suffix="%" duration={2000} />
+                  </div>
+                  <div className="text-gray-600 mb-4">Aumento no faturamento</div>
+                  <div className="text-sm text-gray-500">Clínica Veterinária - SP</div>
+                </div>
+              </ScrollReveal>
 
-              <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <div className="text-4xl font-bold text-orange-500 mb-2">+250%</div>
-                <div className="text-gray-600 mb-4">Aumento em leads qualificados</div>
-                <div className="text-sm text-gray-500">Hospital 24h - RJ</div>
-              </div>
+              <ScrollReveal delay={400}>
+                <div className="bg-white rounded-2xl p-8 shadow-lg text-center hover-lift">
+                  <div className="text-4xl font-bold text-orange-500 mb-2">
+                    <CounterAnimation prefix="+" end={250} suffix="%" duration={2000} />
+                  </div>
+                  <div className="text-gray-600 mb-4">Aumento em leads qualificados</div>
+                  <div className="text-sm text-gray-500">Hospital 24h - RJ</div>
+                </div>
+              </ScrollReveal>
 
-              <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <div className="text-4xl font-bold text-red-500 mb-2">4.2x</div>
-                <div className="text-gray-600 mb-4">Retorno sobre investimento</div>
-                <div className="text-sm text-gray-500">Pet Shop Premium - MG</div>
-              </div>
+              <ScrollReveal delay={600}>
+                <div className="bg-white rounded-2xl p-8 shadow-lg text-center hover-lift">
+                  <div className="text-4xl font-bold text-red-500 mb-2">
+                    <CounterAnimation end={4.2} suffix="x" duration={2000} />
+                  </div>
+                  <div className="text-gray-600 mb-4">Retorno sobre investimento</div>
+                  <div className="text-sm text-gray-500">Pet Shop Premium - MG</div>
+                </div>
+              </ScrollReveal>
             </div>
           </div>
         </div>
