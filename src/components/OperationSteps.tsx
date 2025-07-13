@@ -18,7 +18,7 @@ const OperationSteps = () => {
     {
       icon: <Users className="h-12 w-12 text-purple-500" />,
       number: "03",
-      title: "Você (ou o time de humanos) entra onde precisa",
+      title: "Pessoas reais entram onde precisa",
       description: "Intervenção humana estratégica apenas nos momentos cruciais"
     },
     {
