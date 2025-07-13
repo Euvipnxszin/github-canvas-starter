@@ -1,7 +1,7 @@
 
 import { Target, Zap, Crown, TrendingUp } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
-import CounterAnimation from './CounterAnimation';
+import TypewriterResults from './TypewriterResults';
 
 const Solutions = () => {
   const solutions = [
@@ -16,7 +16,7 @@ const Solutions = () => {
       icon: <Zap className="h-10 w-10 sm:h-12 sm:w-12 text-yellow-500" />,
       title: "Defendemos seu território das franquias gigantes",
       description: "Criamos campanhas personalizadas que reforçam o valor da sua marca local. Sua clínica se posiciona como referência e fideliza clientes antes mesmo que a concorrência apareça.",
-      results: "95% de ocupação em feriados",
+      results: "120% de ocupação em feriados",
       color: "from-yellow-400 to-orange-500"
     },
     {
@@ -66,39 +66,25 @@ const Solutions = () => {
                   {solution.description}
                 </p>
                 
-                <div className="bg-gradient-to-r from-gray-50 to-purple-50 rounded-lg p-3 sm:p-4 border-l-4 border-purple-500 group-hover:border-purple-600 transition-colors">
-                  <div className="text-purple-700 font-bold text-base sm:text-lg flex items-center">
-                    📈 <span className="ml-2">{solution.results}</span>
-                  </div>
-                </div>
+                <TypewriterResults
+                  texts={[
+                    " em consultas de emergência",
+                    " de ocupação em feriados", 
+                    " no ticket médio",
+                    " com margem de LUCRO"
+                  ]}
+                  numbers={[
+                    { value: 250, suffix: "%" },
+                    { value: 120, suffix: "%" },
+                    { value: 180, suffix: "%" },
+                    { value: 100, suffix: "% ROI" }
+                  ]}
+                />
               </div>
             </ScrollReveal>
           ))}
         </div>
 
-        {/* Microinterações com números */}
-        <ScrollReveal delay={800}>
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="group hover-lift p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl">
-              <div className="text-4xl font-bold text-blue-600 mb-2">
-                <CounterAnimation end={300} suffix="%" />
-              </div>
-              <p className="text-blue-700 font-medium">Aumento em consultas</p>
-            </div>
-            <div className="group hover-lift p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl">
-              <div className="text-4xl font-bold text-green-600 mb-2">
-                <CounterAnimation end={48} suffix="h" />
-              </div>
-              <p className="text-green-700 font-medium">Para primeiros resultados</p>
-            </div>
-            <div className="group hover-lift p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl">
-              <div className="text-4xl font-bold text-purple-600 mb-2">
-                <CounterAnimation end={95} suffix="%" />
-              </div>
-              <p className="text-purple-700 font-medium">Taxa de satisfação</p>
-            </div>
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   );

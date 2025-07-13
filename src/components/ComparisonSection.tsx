@@ -17,7 +17,7 @@ const ComparisonSection = () => {
     {
       item: "Automação com IA",
       freelancer: "Básico",
-      agency: "Usa ferramentas, mas o núcleo do trabalho é o serviço manual de analistas.",
+      agency: "Automação parcial que gera falhas, Serviços engessados e frustração",
       meltro: "NATIVO. Nosso sistema é construído sobre uma base de Inteligência Artificial para prospecção, SEO e otimização"
     },
     {

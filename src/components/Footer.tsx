@@ -5,9 +5,9 @@ import { getAssetPath } from '@/lib/assets';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12 sm:py-16">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-12">
+    <footer className="bg-gray-900 text-white py-8 sm:py-12 lg:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 mb-6 sm:mb-8 lg:mb-12">
           {/* Logo e Descrição */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">

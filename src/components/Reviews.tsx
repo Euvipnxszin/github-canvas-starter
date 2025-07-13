@@ -1,6 +1,7 @@
 import { Star } from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 import StarRating from './StarRating';
+import AnimatedStarRating from './AnimatedStarRating';
 const Reviews = () => {
   const reviews = [{
     name: "Dra. Marina Silva",
@@ -50,8 +51,8 @@ const Reviews = () => {
             <ScrollReveal key={index} delay={index * 200}>
               <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-lg hover-lift border border-gray-100 group">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-3">
-                    {[...Array(review.rating)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current group-hover:animate-bounce-subtle" style={{ animationDelay: `${i * 0.1}s` }} />)}
+                  <div className="mr-3">
+                    <AnimatedStarRating size="md" onHover={true} />
                   </div>
                   <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded group-hover:bg-purple-100 group-hover:text-purple-600 transition-colors">
                     {review.platform}

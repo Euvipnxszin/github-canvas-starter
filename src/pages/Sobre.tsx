@@ -1,6 +1,7 @@
 import { Users, Target, Award, TrendingUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import OperationSteps from '@/components/OperationSteps';
 import { getAssetPath } from '@/lib/assets';
 const Sobre = () => {
   const valores = [{
@@ -91,29 +92,8 @@ const Sobre = () => {
         </div>
       </section>
 
-      {/* Valores */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-playfair font-bold mb-6 text-gray-950">Por que escolher a Meltro agency ?</h2>
-            <p className="text-xl text-gray-600">
-              Os princípios que guiam cada estratégia e cada resultado que entregamos.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {valores.map((valor, index) => <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="mb-4">{valor.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {valor.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {valor.description}
-                </p>
-              </div>)}
-          </div>
-        </div>
-      </section>
+      {/* Operação Inteligente */}
+      <OperationSteps />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-orange-500 to-red-500">

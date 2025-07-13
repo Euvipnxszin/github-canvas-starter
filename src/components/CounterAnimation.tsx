@@ -7,7 +7,7 @@ interface CounterAnimationProps {
   prefix?: string;
 }
 
-const CounterAnimation = ({ end, duration = 2000, suffix = '', prefix = '' }: CounterAnimationProps) => {
+const CounterAnimation = ({ end, duration = 30000, suffix = '', prefix = '' }: CounterAnimationProps) => {
   const [count, setCount] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);

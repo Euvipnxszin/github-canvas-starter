@@ -115,7 +115,8 @@ const ServicesSection = () => {
         "Otimização de palavras-chave específicas para pet care",
         "Criação de conteúdo otimizado",
         "Análise de concorrência no mercado pet",
-        "Estratégias de link building especializadas"
+        "Estratégias de link building especializadas",
+        "Growth hacking com auxílio de IA para maximizar as chances de sucesso"
       ],
       detailedInfo: "Desenvolvemos estratégias de SEO específicas para o mercado pet care, utilizando inteligência artificial para identificar as melhores oportunidades de rankeamento, criando conteúdo otimizado e implementando técnicas avançadas para posicionar seu negócio no topo do Google.",
       color: "from-purple-400 to-blue-500",

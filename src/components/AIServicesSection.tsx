@@ -1,4 +1,3 @@
-
 import { Bot, Phone, Settings, BookOpen } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
@@ -59,6 +58,20 @@ const AIServicesSection = () => {
       ],
       detailedInfo: "Desenvolvemos agentes de IA completamente personalizados para as necessidades específicas do seu negócio pet care. Estes agentes aprendem continuamente sobre seus processos, clientes e mercado, automatizando tarefas complexas e fornecendo insights valiosos para otimizar suas operações e aumentar sua lucratividade.",
       color: "from-indigo-400 to-purple-500"
+    },
+    {
+      icon: <Bot className="h-12 w-12 text-indigo-500" />,
+      title: "Consultoria",
+      description: "Consultoria especializada para implementação e otimização de todas as soluções de IA e automação.",
+      shortDescription: "Consultoria especializada para implementação e otimização de todas as soluções de IA e automação.",
+      features: [
+        "Obtenha escalabilidade real",
+        "Implementação guiada",
+        "Acompanhamento dos resultados"
+      ],
+      detailedInfo: "Obtenha um Parceiro Estratégico e sinta na pele o por que é muito Melhor que uma Solução 100% Automatizada\n\nNossa consultoria especializada oferece análise estratégica completa do seu negócio, implementação guiada de todas as soluções, treinamento completo da sua equipe e suporte contínuo para garantir o máximo resultado dos investimentos.",
+      color: "from-indigo-400 to-purple-500",
+      additionalFeatures: ["Suporte contínuo", "Machine Learning avançado", "Processamento de linguagem natural", "Análise preditiva personalizada"]
     }
   ];
 
@@ -85,25 +98,9 @@ const AIServicesSection = () => {
               detailedInfo={servico.detailedInfo}
               color={servico.color}
               buttonColor="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600"
+              additionalFeatures={servico.additionalFeatures || []}
             />
           ))}
-          
-          {/* Novo serviço de Consultoria */}
-          <ServiceCard
-            icon={<Bot className="h-12 w-12 text-indigo-500" />}
-            title="Consultoria"
-            shortDescription="Consultoria especializada para implementação e otimização de todas as soluções de IA e automação."
-            features={[
-              "Growth hacking com auxílio de IA para maximizar as chances de sucesso",
-              "Obtenha escalabilidade real",
-              "Implementação guiada",
-              "Acompanhamento dos resultados"
-            ]}
-            detailedInfo="Obtenha um Parceiro Estratégico e sinta na pele o por que é muito Melhor que uma Solução 100% Automatizada\n\nNossa consultoria especializada oferece análise estratégica completa do seu negócio, implementação guiada de todas as soluções, treinamento completo da sua equipe e suporte contínuo para garantir o máximo resultado dos investimentos."
-            color="from-indigo-400 to-purple-500"
-            buttonColor="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600"
-            additionalFeatures={["Suporte contínuo", "Machine Learning avançado", "Processamento de linguagem natural", "Análise preditiva personalizada"]}
-          />
         </div>
       </div>
     </section>

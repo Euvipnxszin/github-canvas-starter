@@ -11,13 +11,19 @@ export default {
 	],
 	prefix: "",
 	theme: {
-		container: {
-			center: true,
-			padding: '2rem',
-			screens: {
-				'2xl': '1400px'
-			}
-		},
+			container: {
+				center: true,
+				padding: {
+					DEFAULT: '1rem',
+					sm: '1.5rem',
+					lg: '2rem',
+					xl: '2.5rem',
+					'2xl': '3rem'
+				},
+				screens: {
+					'2xl': '1400px'
+				}
+			},
 		extend: {
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
@@ -28,6 +34,8 @@ export default {
 				'gradient-cta': 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
 				'gradient-success': 'linear-gradient(135deg, #fb923c 0%, #f97316 100%)',
 				'gradient-premium': 'linear-gradient(135deg, #fed7aa 0%, #fdba74 100%)',
+				'gradient-card': 'linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(251,146,60,0.05) 100%)',
+				'gradient-hover': 'linear-gradient(135deg, rgba(251,146,60,0.1) 0%, rgba(234,88,12,0.1) 100%)',
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -123,6 +131,22 @@ export default {
 					'50%': {
 						opacity: '0.8'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px rgba(251, 146, 60, 0.5)'
+					},
+					'50%': {
+						boxShadow: '0 0 40px rgba(251, 146, 60, 0.8)'
+					}
 				}
 			},
 			animation: {
@@ -130,7 +154,9 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-up': 'slide-up 0.8s ease-out',
-				'pulse-slow': 'pulse-slow 3s ease-in-out infinite'
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite'
 			}
 		}
 	},

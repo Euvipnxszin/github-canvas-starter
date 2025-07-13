@@ -6,7 +6,7 @@ interface SkeletonLoaderProps {
   loadingTime?: number;
 }
 
-const SkeletonLoader = ({ children, loadingTime = 2000 }: SkeletonLoaderProps) => {
+const SkeletonLoader = ({ children, loadingTime = 3000 }: SkeletonLoaderProps) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
